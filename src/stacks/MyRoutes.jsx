@@ -7,8 +7,8 @@ const RootStack = createStackNavigator();
 
 export const RootApplication = () => {
     return (
-        <RootStack.Navigator>
-            <RootStack.Screen screenOptions={{headerShown:false}}/>
+        <RootStack.Navigator screenOptions={{headerShown:false}}>
+            
             <RootStack.Screen name="Auth" component={AuthStackComponent}/>
         </RootStack.Navigator>
     )
